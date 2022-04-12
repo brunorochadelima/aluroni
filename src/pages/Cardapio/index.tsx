@@ -1,10 +1,14 @@
-import React from 'react'
-import styles from './Cardapio.module.scss'
+import React from "react";
+import styles from "./Cardapio.module.scss";
 
 function Cardapio() {
   return (
-    <div>index</div>
-  )
+    <main>
+      <nav className={styles.menu}>
+        <img src="../assets/logo.svg" alt="Logo do aluroni" />
+      </nav>
+    </main>
+  );
 }
 
-export default Cardapio
+export default Cardapio;
