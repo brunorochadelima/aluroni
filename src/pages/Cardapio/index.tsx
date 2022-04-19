@@ -8,6 +8,7 @@ import Ordenador from "./Ordenador/Index";
 function Cardapio() {
   const [busca, setBusca] = React.useState("");
   const [filtro, setFiltro] = React.useState<number | null>(null);
+  const [ordenador, setOrdenador] = React.useState("")
   return (
     <main>
       <nav className={styles.menu}>
@@ -21,7 +22,7 @@ function Cardapio() {
         <Buscador busca={busca} setBusca={setBusca} />
         <div className={styles.cardapio__filtros}>
           <Filtros filtro={filtro} setFiltro={setFiltro} />
-          <Ordenador />
+          <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
         </div>
       </section>
     </main>
