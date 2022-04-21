@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg";
 import Buscador from "./Buscador";
 import Filtros from "./Filtros";
 import Ordenador from "./Ordenador/Index";
+import Itens from "./Itens/Index";
 
 function Cardapio() {
   const [busca, setBusca] = React.useState("");
@@ -24,6 +25,7 @@ function Cardapio() {
           <Filtros filtro={filtro} setFiltro={setFiltro} />
           <Ordenador ordenador={ordenador} setOrdenador={setOrdenador}/>
         </div>
+        <Itens/>
       </section>
     </main>
   );
