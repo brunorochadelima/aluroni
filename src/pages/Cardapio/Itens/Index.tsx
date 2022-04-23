@@ -1,11 +1,13 @@
 import React from "react";
-import itens from "./itens.json";
+import Item from "./item";
+import cardapio from "./itens.json";
+import styles from "./Itens.module.scss";
 
 export default function Itens() {
   return (
-    <div>
-      {itens.map((item) => (
-        <div>{item.title}</div>
+    <div className={styles.itens}>
+      {cardapio.map((item) => (
+        <Item key={item.id} />
       ))}
     </div>
   );
