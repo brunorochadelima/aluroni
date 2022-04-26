@@ -1,7 +1,7 @@
-import React from "react";
-import Item from "./Item";
-import cardapio from "./itens.json";
-import styles from "./Itens.module.scss";
+import React from 'react';
+import Item from './Item';
+import cardapio from './itens.json';
+import styles from './Itens.module.scss';
 
 interface Props {
   busca: string;
@@ -14,7 +14,7 @@ export default function Itens(props: Props) {
   const { busca, filtro, ordenador } = props;
 
   function testaBusca(title: string) {
-    const regex = new RegExp(busca, "i");
+    const regex = new RegExp(busca, 'i');
     return regex.test(title);
   }
 
@@ -25,11 +25,11 @@ export default function Itens(props: Props) {
 
   function ordenar(novaLista: typeof cardapio) {
     switch (ordenador) {
-      case "porcao":
+      case 'porcao':
         return novaLista.sort((a, b) => (a.size > b.size ? 1 : -1));
-      case "qtd_pessoas":
+      case 'qtd_pessoas':
         return novaLista.sort((a, b) => (a.serving > b.serving ? 1 : -1));
-      case "preco":
+      case 'preco':
         return novaLista.sort((a, b) => (a.price > b.price ? 1 : -1));
       default:
         return novaLista;
@@ -38,9 +38,10 @@ export default function Itens(props: Props) {
 
   React.useEffect(() => {
     const novaLista = cardapio.filter(
-      (item) => testaBusca(item.title) && testaFiltro(item.category.id)
+      (item) => testaBusca(item.title) && testaFiltro(item.category.id),
     );
     setLista(ordenar(novaLista));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [busca, filtro, ordenador]);
 
   return (
