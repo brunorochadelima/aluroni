@@ -11,7 +11,7 @@ interface Props {
 
 export default function Filtros({ filtro, setFiltro }: Props) {
   function selecionaFiltros(opcao: IOpcao) {
-    if (filtro == opcao.id) {
+    if (filtro === opcao.id) {
       return setFiltro(null);
     }
     return setFiltro(opcao.id);

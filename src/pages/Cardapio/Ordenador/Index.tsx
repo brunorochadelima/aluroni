@@ -15,7 +15,7 @@ export default function Ordenador({ ordenador, setOrdenador }: Props) {
 
   return (
     <button
-      className={`${styles.ordenador} ${ordenador != "" ? styles["ordenador--ativo"] : "" }`}
+      className={`${styles.ordenador} ${ordenador !== "" ? styles["ordenador--ativo"] : "" }`}
       onClick={() => setAberto(!aberto)}
       onBlur={() => setAberto(false)}
     >
