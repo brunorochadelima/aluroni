@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './Cardapio.module.scss';
-//import logo from "./assets/logo.svg";
-import logo from 'assets/logo.svg';
 import Filtros from './Filtros';
 import Ordenador from './Ordenador/Index';
 import Itens from './Itens/Index';
 import Buscador from './Buscador';
+import Menu from 'components/menu';
 
 function Cardapio() {
   const [busca, setBusca] = React.useState('');
@@ -13,9 +12,6 @@ function Cardapio() {
   const [ordenador, setOrdenador] = React.useState('');
   return (
     <main>
-      <nav className={styles.menu}>
-        <img src={logo} alt="Logo do aluroni" />
-      </nav>
       <header className={styles.header}>
         <div className={styles.header__text}>A casa do código e da massa</div>
       </header>
