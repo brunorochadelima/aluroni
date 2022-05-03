@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'normalize.css';
 import Cardapio from '../src/pages/Cardapio';
+import Inicio from 'pages/Inicio';
 //import Cardapio from 'pages/Cardapio';
 
 
@@ -10,9 +11,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-        <Cardapio/>
-    </React.StrictMode>
+  <React.StrictMode>
+    <Inicio/>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
