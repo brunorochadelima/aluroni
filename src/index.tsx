@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'normalize.css';
-import Inicio from 'pages/Inicio';
+import Router from './routes';
+
+
 //import Cardapio from 'pages/Cardapio';
 
 
@@ -11,7 +13,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Inicio/>
+    <Router/>
   </React.StrictMode>
 );
 
