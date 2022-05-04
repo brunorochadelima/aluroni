@@ -4,7 +4,7 @@ import Filtros from './Filtros';
 import Ordenador from './Ordenador/Index';
 import Itens from './Itens/Index';
 import Buscador from './Buscador';
-import Menu from 'components/menu';
+import stylesTema from 'styles/Tema.module.scss';
 
 function Cardapio() {
   const [busca, setBusca] = React.useState('');
@@ -12,7 +12,7 @@ function Cardapio() {
   const [ordenador, setOrdenador] = React.useState('');
   return (
     <section className={styles.cardapio}>
-      <h3 className={styles.cardapio__titulo}>Cardápio</h3>
+      <h3 className={stylesTema.titulo}>Cardápio</h3>
       <Buscador busca={busca} setBusca={setBusca} />
       <div className={styles.cardapio__filtros}>
         <Filtros filtro={filtro} setFiltro={setFiltro} />
