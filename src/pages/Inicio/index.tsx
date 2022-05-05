@@ -14,7 +14,7 @@ export default function Inicio() {
   const navigate = useNavigate();
 
   function redirecionaParaDetalhes(prato: typeof cardapio[0]) {
-    navigate(`/prato/${prato.id}`, { state: { ...prato } });
+    navigate(`/prato/${prato.id}`, { state: { prato } });
   }
 
   return (
