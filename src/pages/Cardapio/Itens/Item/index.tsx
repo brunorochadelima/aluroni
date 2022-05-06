@@ -1,9 +1,8 @@
-import cardapio from 'data/cardapio.json';
 import React from 'react';
+import { Prato } from 'types/Prato';
 import styles from './Item.module.scss';
-type Props = typeof cardapio[0];
 
-export default function Item(props: Props) {
+export default function Item(props: Prato) {
   const { title, description, category, size, serving, price, photo } = props;
   return (
     <div className={styles.item}>
