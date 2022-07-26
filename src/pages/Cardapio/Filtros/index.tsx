@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from '../Filtros/Filtros.module.scss';
 import filtros from '../Filtros/filtros.json';
 
@@ -9,7 +9,7 @@ interface Props {
   setFiltro: React.Dispatch<React.SetStateAction<number | null>>;
 }
 
-export default function Filtros({ filtro, setFiltro }: Props) {
+function Filtros({ filtro, setFiltro }: Props) {
   function selecionaFiltros(opcao: IOpcao) {
     if (filtro === opcao.id) {
       return setFiltro(null);
@@ -33,3 +33,5 @@ export default function Filtros({ filtro, setFiltro }: Props) {
     </div>
   );
 }
+
+export default memo(Filtros);
