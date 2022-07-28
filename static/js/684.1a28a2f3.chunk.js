@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkaluroni=self.webpackChunkaluroni||[]).push([[684],{684:function(a,e,r){r.r(e),r.d(e,{default:function(){return l}});r(791);var n="PaginaPadrao_header__rmVR+",s="PaginaPadrao_header__text__ytZED",c=r(871),d=r(640),i=r(184);function l(a){var e=a.children;return(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("header",{className:n,children:(0,i.jsx)("div",{className:s,children:"A casa do c\xf3digo e da massa"})}),(0,i.jsxs)("div",{className:d.Z.container,children:[(0,i.jsx)(c.j3,{}),e]})]})}}}]);
+//# sourceMappingURL=684.1a28a2f3.chunk.js.map
